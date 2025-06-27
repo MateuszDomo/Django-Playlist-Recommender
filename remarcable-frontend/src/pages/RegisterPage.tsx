@@ -1,14 +1,9 @@
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { RootState } from '../redux/store';
-import { loginAPI, type LoginResponse} from '../api/LoginAPI';
-import { login } from '../redux/userSlice';
-import type { User } from '../models/User';
+import { registerAPI } from '../api/RegisterAPI';
 import { useApiClient } from '../hooks/useAPIClient';
 
-export const LoginPage = () => {
-  const dispatch = useDispatch();
+export const RegisterPage = () => {
   const navigate = useNavigate();
 
   const api = useApiClient();
@@ -16,23 +11,20 @@ export const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const user = useSelector((state: RootState) => state.user)
-
-  const handleLogin = async (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!username || !password) return;
     try {
-      const res: LoginResponse = await loginAPI(api, username, password)
-      dispatch(login({ user: res.user, token: res.token }));
-      navigate('/'); 
+      await registerAPI(api, username, password);
+      navigate('/login'); 
     } catch (e: any) {}
   };
 
   return (
-    <div className="login-page" style={{ padding: 20 }}>
+    <div className="register-page" style={{ padding: 20 }}>
         <form>
-          <h2>Login</h2>
+          <h2>Register</h2>
           <div>
             <label>
               Username:
@@ -55,9 +47,10 @@ export const LoginPage = () => {
               />
             </label>
           </div>
+ 
           <div style={{ marginTop: '10px' }}>
-            <button onClick={handleLogin}>Login</button>{' '}
-            <button onClick={() => navigate('/register')}>Register</button>
+            <button onClick={() => navigate('/login')}>Login</button>
+            <button onClick={handleRegister}>Register</button>{' '}
           </div>
         </form>
     </div>

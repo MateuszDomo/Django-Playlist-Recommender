@@ -1,11 +1,12 @@
-export interface User {
-  id: string,
-  name: string,
+import type { BaseModel } from "./BaseModel"
+
+export interface User extends BaseModel {
+  username: string,
 }
 
-export const createUser = (id: string, name: string): User => {
-    return {
-        id: id,
-        name:name,
-    }
+export const createUser = (id: string, username: string): User => {
+  return {
+    id: id,
+    username:username,
+  }
 }

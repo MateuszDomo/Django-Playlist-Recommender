@@ -1,29 +1,35 @@
 from core.models import Song, SongTag, Tag
 from core.serializers import SongSerializer 
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.db import transaction
 from django.core.exceptions import ObjectDoesNotExist
+from django.db.models import Q
+
 
 
 class SongViewSet(viewsets.ModelViewSet):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
+    permission_classes = [permissions.IsAuthenticated] 
     
     def get_queryset(self):
         qs = super().get_queryset()
-        genre_id = self.request.query_params.get('genre')
-        if genre_id:
-            qs = qs.filter(genre_id=genre_id)
+        print(self.request.query_params)
+        genre_ids = self.request.query_params.getlist('genres[]')
+        if genre_ids:
+            qs = qs.filter(genre__id__in=genre_ids).distinct()
 
-        tags = self.request.query_params.getlist('tags')
-        if tags:
-            qs = qs.filter(tags__id__in=tags).distinct()
-
-        description = self.request.query_params.get('description')
-        if description:
-            qs = qs.filter(description__icontains=description)
+        tag_ids = self.request.query_params.getlist('tags[]')
+        if tag_ids:
+            qs = qs.filter(songtag__tag__id__in=tag_ids).distinct()
+    
+        search = self.request.query_params.get('search')
+        if search:
+            qs = qs.filter(
+                Q(name__icontains=search) | Q(description__icontains=search)
+            )
 
         return qs
 

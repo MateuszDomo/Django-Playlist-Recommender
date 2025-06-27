@@ -1,6 +1,6 @@
 from core.models import Song, Tag, Playlist, Genre
-from core.serializers import SongSerializer 
-from rest_framework import viewsets, status
+from core.serializers import PlaylistSerializer 
+from rest_framework import viewsets, status, permissions
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from django.db import transaction
@@ -8,7 +8,21 @@ from django.core.exceptions import ObjectDoesNotExist
 
 class PlaylistViewSet(viewsets.ModelViewSet):
     queryset = Playlist.objects.all()
-    serializer_class = SongSerializer
+    serializer_class = PlaylistSerializer
+    permission_classes = [permissions.IsAuthenticated] 
+
+    def get_queryset(self):
+        queryset = Playlist.objects.all()
+        user = self.request.user
+        user_specific = self.request.query_params.get('user_specific')
+        if user_specific:
+            queryset = queryset.filter(user=user)
+        print(queryset)
+        return queryset
+    
+    # User for playlist is always created by user sending request. Save requesting user in serializer before creating
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
 
     # Sends back 5 recommended songs based on genre and tags in current playlist
     @action(detail=True, methods=["get"], url_path="recommend-songs")
@@ -33,7 +47,6 @@ class PlaylistViewSet(viewsets.ModelViewSet):
             },
             status=status.HTTP_200_OK,
         ) 
-
 
     @action(detail=True, methods=["post"], url_path="add-song")
     def add_song(self, request, pk=None):

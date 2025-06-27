@@ -1,14 +1,13 @@
 import type { AxiosInstance } from "axios";
 import type { User } from "../models/User";
 
-export interface LoginResponse {
-  token: string;
+export interface RegisterResponse {
   user: User;
 }
 
-export async function loginAPI(api: AxiosInstance, username: string, password: string): Promise<LoginResponse> {
+export async function registerAPI(api: AxiosInstance, username: string, password: string): Promise<RegisterResponse> {
   try {
-    const response = await api.post('/api/login/', {
+    const response = await api.post('/api/register/', {
       username,
       password,
     });
