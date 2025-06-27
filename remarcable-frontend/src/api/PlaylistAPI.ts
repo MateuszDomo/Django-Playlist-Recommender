@@ -4,6 +4,7 @@ import type { Tag } from "../models/Tag";
 import {  transformBaseModelAPIRequest, transformBaseModelAPIResponse, type BaseModelAPIRequestData, type BaseModelAPIResponseData } from "./BaseAPI";
 import { transformSongAPIResponse, type SongAPIResponseData } from "./SongAPI";
 import { transformUserAPIResponse, type UserAPIRequestData, type UserAPIResponseData } from "./UserAPI";
+import type { Song } from "../models/Song";
 
 export interface PlaylistAPIResponseData extends BaseModelAPIResponseData {
     name: string,
@@ -40,7 +41,6 @@ export async function getPlaylists(api: AxiosInstance, qp: {userSpecific: boolea
         params.user_specific = qp.userSpecific;
     }
     const response = await api.get(`/api/playlists/`, {params});
-    console.log(response)
     return response.data.map((apiData: PlaylistAPIResponseData) => transformPlaylistAPIResponse(apiData));
   } catch (error: any) {
     if (error.response && error.response.data && error.response.data.error) {
@@ -67,6 +67,30 @@ export async function addToPlaylist(api: AxiosInstance, songId: string, playlist
   try {
     const response = await api.post(`/api/playlists/${playlistId}/add-song/`, {song_id: songId});
     return response.data;
+  } catch (error: any) {
+    if (error.response && error.response.data && error.response.data.error) {
+      throw new Error(error.response.data.error);
+    }
+    throw error;
+  }
+}
+
+export async function removeFromPlaylist(api: AxiosInstance, songId: string, playlistId: string): Promise<{message: string}> {
+  try {
+    const response = await api.post(`/api/playlists/${playlistId}/remove-song/`, {song_id: songId});
+    return response.data;
+  } catch (error: any) {
+    if (error.response && error.response.data && error.response.data.error) {
+      throw new Error(error.response.data.error);
+    }
+    throw error;
+  }
+}
+
+export async function getRecommendedSongs(api: AxiosInstance, playlist: Playlist): Promise<Song[]> {
+  try {
+    const response = await api.get(`/api/playlists/${playlist.id}/recommend-songs/`, {});
+    return response.data.songs.map((apiData: SongAPIResponseData) => transformSongAPIResponse(apiData));
   } catch (error: any) {
     if (error.response && error.response.data && error.response.data.error) {
       throw new Error(error.response.data.error);

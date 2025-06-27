@@ -1,13 +1,15 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { 
   List, ListItem, ListItemText, Paper, Typography, 
   CircularProgress, TextField, Button, Stack, Divider
 } from '@mui/material';
-import type { Playlist } from '../../../models/Playlist';
-import type { Song } from '../../../models/Song';
-import { useGetPlaylists } from '../../../hooks/useGetPlaylists';
-import { createPlaylist } from '../../../api/PlaylistAPI';
-import { useApiClient } from '../../../hooks/useAPIClient';
+import type { Playlist } from '../../../../models/Playlist';
+import type { Song } from '../../../../models/Song';
+import { useGetPlaylists } from '../../../../hooks/useGetPlaylists';
+import { createPlaylist } from '../../../../api/PlaylistAPI';
+import { useApiClient } from '../../../../hooks/useAPIClient';
+import { PlaylistSongsList } from './PlaylistSongsList';
+import { PlaylistSongs } from './PlaylistSongs';
 
 export const PlaylistComponent = () => {
   const { playlists, refresh } = useGetPlaylists();
@@ -16,7 +18,15 @@ export const PlaylistComponent = () => {
   const [newPlaylistName, setNewPlaylistName] = useState('');
   const [selectedPlaylist, setSelectedPlaylist] = useState<Playlist | null>(null);
 
-  console.log(playlists)
+  useEffect(() => {
+    if (selectedPlaylist) {
+      const updated = playlists.find(p => p.id === selectedPlaylist.id);
+      if (updated) {
+        setSelectedPlaylist(updated);
+      }
+    }
+  }, [playlists]);
+
   const api = useApiClient();
 
   const handleCreate = async () => {
@@ -34,8 +44,13 @@ export const PlaylistComponent = () => {
     }
   };
 
-  if (loading) return <CircularProgress />;
-  if (error) return <Typography color="error">{error}</Typography>;
+  const handleSelectPlaylist = (playlist: Playlist) => {
+    if (playlist.id === selectedPlaylist?.id) {
+      setSelectedPlaylist(null);
+    } else {
+      setSelectedPlaylist(playlist);
+    }
+  }
 
   return (
     <Paper sx={{ padding: 2, maxWidth: 600 }}>
@@ -63,7 +78,7 @@ export const PlaylistComponent = () => {
           {playlists.map((playlist) => (
             <ListItem 
               key={playlist.id} 
-              onClick={() => setSelectedPlaylist(playlist)}
+              onClick={() => handleSelectPlaylist(playlist)}
             >
               <ListItemText primary={playlist.name} />
             </ListItem>
@@ -74,18 +89,7 @@ export const PlaylistComponent = () => {
       {selectedPlaylist && (
         <>
           <Divider sx={{ my: 2 }} />
-          <Typography variant="h6">Songs in "{selectedPlaylist.name}"</Typography>
-          {selectedPlaylist.songs.length === 0 ? (
-            <Typography>No songs in this playlist.</Typography>
-          ) : (
-            <List dense>
-              {selectedPlaylist.songs.map((song: Song) => (
-                <ListItem key={song.id}>
-                  <ListItemText primary={song.name} secondary={song.artist.name} />
-                </ListItem>
-              ))}
-            </List>
-          )}
+          <PlaylistSongs playlist={selectedPlaylist} refreshPlaylists={refresh} /> 
         </>
       )}
     </Paper>

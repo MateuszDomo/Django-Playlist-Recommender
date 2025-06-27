@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { SongsComponent } from './SongsComponent';
-import { PlaylistComponent } from './PlaylistComponent';
+import { SongsComponent } from './Song/SongsComponent';
+import { PlaylistComponent } from './Playlist/PlaylistComponent';
 
 type MusicPanelSelection = "songs" | "playlists"
 

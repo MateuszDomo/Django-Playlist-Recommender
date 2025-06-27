@@ -11,12 +11,12 @@ import {
   Stack,
   Chip,
 } from '@mui/material';
-import type { Song } from '../../../models/Song';
-import { getSongs } from '../../../api/SongAPI';
+import type { Song } from '../../../../models/Song';
+import { getSongs } from '../../../../api/SongAPI';
 import { SongsFilter } from './SongFilter';
-import type { SongDetailDialogState, SongFilters } from './types';
+import type { SongDetailDialogState, SongFilters } from '../types';
 import { SongDetailDialog } from './SongDetailDialog';
-import { useApiClient } from '../../../hooks/useAPIClient';
+import { useApiClient } from '../../../../hooks/useAPIClient';
 
 export const SongsComponent = () => {
 
@@ -50,15 +50,20 @@ export const SongsComponent = () => {
   }
 
   return (
-    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: '100%'}}>
+    <div style={{ flex: 1, display: 'flex', flexDirection: 'column'}}>
       <Typography variant="h3" component="h2" gutterBottom>
       Explore Songs... :)
       </Typography>
       <SongsFilter  onFilterChange={onFilterChange}/>
-      <TableContainer component={Paper} sx={{ marginTop: 2, flex: 1, overflow: 'auto' }}>
+      <TableContainer component={Paper} sx={{ marginTop: 2, flex: 1,   maxHeight: '70vh' }}>
         <Table >
           <TableHead>
-            <TableRow>
+            <TableRow sx={{
+              position: 'sticky',
+              top: 0,
+              backgroundColor: '#f5f5f5',
+              zIndex: 10,
+            }}>
               <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#f5f5f5' }}>Title</TableCell>
               <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#f5f5f5' }}>Artist</TableCell>
               <TableCell sx={{ fontWeight: 'bold', backgroundColor: '#f5f5f5' }}>Genre</TableCell>
@@ -67,7 +72,7 @@ export const SongsComponent = () => {
             </TableRow>
           </TableHead>
 
-          <TableBody>
+          <TableBody sx={{}}>
             {songs.map((song) => (
               <TableRow key={song.id} onClick={() => selectSong(song)} hover>
                 <TableCell>{song.name}</TableCell>

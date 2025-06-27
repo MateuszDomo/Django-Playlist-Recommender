@@ -11,10 +11,10 @@ import {
   FormControl,
   InputLabel,
 } from '@mui/material';
-import type { Song } from '../../../models/Song';
-import { useGetPlaylists} from '../../../hooks/useGetPlaylists';
-import { addToPlaylist } from '../../../api/PlaylistAPI';
-import { useApiClient } from '../../../hooks/useAPIClient';
+import type { Song } from '../../../../models/Song';
+import { useGetPlaylists} from '../../../../hooks/useGetPlaylists';
+import { addToPlaylist } from '../../../../api/PlaylistAPI';
+import { useApiClient } from '../../../../hooks/useAPIClient';
 
 interface SongDetailDialogProps {
   song: Song;
@@ -53,12 +53,11 @@ export const SongDetailDialog = ({
             <Typography variant="body2">No tags</Typography>
           )}
         </Stack>
-
         <FormControl fullWidth sx={{ mt: 3 }}>
           <InputLabel id="playlist-select-label">Add To Playlist</InputLabel>
           <Select
             labelId="playlist-select-label"
-            value={''} // Always show placeholder
+            value={''}
             label="Add To Playlist"
             onChange={(e) => handleAddToPlaylist(e.target.value)}
           >

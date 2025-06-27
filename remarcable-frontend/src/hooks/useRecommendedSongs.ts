@@ -1,20 +1,22 @@
 import { useEffect, useState } from "react";
 import type { Playlist } from "../models/Playlist";
-import { getPlaylists } from "../api/PlaylistAPI";
+import { getPlaylists, getRecommendedSongs } from "../api/PlaylistAPI";
 import { useApiClient } from "./useAPIClient";
+import type { Song } from "../models/Song";
 
-export const useGetPlaylists = () => {
-  const [playlists, setPlaylists] = useState<Playlist[]>([]);
+export const useRecommendedSongs = (playlist: Playlist) => {
+
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const [songs, setSongs] = useState<Song[]>([]);
 
   const api = useApiClient();
 
   const fetchPlaylists = async () => {
     setLoading(true);
     try {
-      const res = await getPlaylists(api, {userSpecific: true});
-      setPlaylists(res);
+      const res = await getRecommendedSongs(api, playlist);
+      setSongs(res);
     } catch (e) {
       console.log(e)
       setError('Failed to load playlists');
@@ -25,10 +27,10 @@ export const useGetPlaylists = () => {
 
   useEffect(() => {
     fetchPlaylists();
-  }, []);
+  }, [playlist]);
 
   return {
-    playlists,
+    songs,
     loading,
     error,
     refresh: fetchPlaylists,

@@ -1,26 +1,1002 @@
 [
   {
-    "name": "Midnight Drive",
-    "genre": "Lo-Fi",
-    "artist": "Synthwave Surfers",
-    "tags": ["Chill", "Driving"]
+    "name": "Song 1",
+    "genre": "Hip-Hop",
+    "artist": "Rock Legends",
+    "tags": [
+      "Rap",
+      "Rhythm"
+    ],
+    "description": "Chill synths for sunset moments"
   },
   {
-    "name": "Focus Mode",
+    "name": "Song 2",
+    "genre": "Rock",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Classic",
+      "Guitar"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 3",
+    "genre": "Pop",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Dance",
+      "Upbeat"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 4",
+    "genre": "Jazz",
+    "artist": "Club Masters",
+    "tags": [
+      "Classic",
+      "Cool"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 5",
+    "genre": "Lo-Fi",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Chill",
+      "Driving"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 6",
+    "genre": "Hip-Hop",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Flow",
+      "Beats"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 7",
+    "genre": "Synthwave",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Nostalgic",
+      "Relax"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 8",
+    "genre": "Classical",
+    "artist": "Rock Legends",
+    "tags": [
+      "Relaxing",
+      "Orchestral"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 9",
+    "genre": "Chillout",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Relax",
+      "Meditative"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 10",
+    "genre": "Rock",
+    "artist": "Deep Focus",
+    "tags": [
+      "Energetic",
+      "Live"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 11",
+    "genre": "Jazz",
+    "artist": "Rock Legends",
+    "tags": [
+      "Smooth",
+      "Classic"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 12",
+    "genre": "Lo-Fi",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Calm",
+      "Driving"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 13",
+    "genre": "Indie",
+    "artist": "Club Masters",
+    "tags": [
+      "Creative",
+      "Alternative"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 14",
+    "genre": "Indie",
+    "artist": "Neon Lights",
+    "tags": [
+      "Fresh",
+      "Creative"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 15",
+    "genre": "Pop",
+    "artist": "Rock Legends",
+    "tags": [
+      "Upbeat",
+      "Dance"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 16",
+    "genre": "Classical",
+    "artist": "Club Masters",
+    "tags": [
+      "Relaxing",
+      "Orchestral"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 17",
+    "genre": "Synthwave",
+    "artist": "Deep Focus",
+    "tags": [
+      "Nostalgic",
+      "Retro"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 18",
+    "genre": "Jazz",
+    "artist": "Rock Legends",
+    "tags": [
+      "Cool",
+      "Classic"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 19",
+    "genre": "Lo-Fi",
+    "artist": "Rock Legends",
+    "tags": [
+      "Chill",
+      "Relax"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 20",
+    "genre": "Hip-Hop",
+    "artist": "Deep Focus",
+    "tags": [
+      "Beats",
+      "Rhythm"
+    ],
+    "description": "Calming tunes to enhance focus"
+  },
+  {
+    "name": "Song 21",
+    "genre": "Synthwave",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Nostalgic",
+      "Relax"
+    ],
+    "description": "Calming tunes to enhance focus"
+  },
+  {
+    "name": "Song 22",
+    "genre": "Pop",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Happy",
+      "Catchy"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 23",
+    "genre": "Synthwave",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Nostalgic",
+      "Relax"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 24",
+    "genre": "Indie",
+    "artist": "Deep Focus",
+    "tags": [
+      "Creative",
+      "Alternative"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 25",
+    "genre": "Hip-Hop",
+    "artist": "Club Masters",
+    "tags": [
+      "Rhythm",
+      "Flow"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 26",
+    "genre": "Hip-Hop",
+    "artist": "Deep Focus",
+    "tags": [
+      "Flow",
+      "Beats"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 27",
+    "genre": "Jazz",
+    "artist": "Deep Focus",
+    "tags": [
+      "Smooth",
+      "Cool"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 28",
+    "genre": "Chillout",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Meditative",
+      "Calm"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 29",
+    "genre": "Pop",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Upbeat",
+      "Happy"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 30",
+    "genre": "Indie",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Upbeat",
+      "Fresh"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 31",
+    "genre": "Indie",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Fresh",
+      "Creative"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 32",
+    "genre": "Rock",
+    "artist": "Club Masters",
+    "tags": [
+      "Classic",
+      "Guitar"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 33",
+    "genre": "Rock",
+    "artist": "Neon Lights",
+    "tags": [
+      "Guitar",
+      "Live"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 34",
+    "genre": "Pop",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Catchy",
+      "Upbeat"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 35",
+    "genre": "Hip-Hop",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Beats",
+      "Rap"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 36",
+    "genre": "Chillout",
+    "artist": "Neon Lights",
+    "tags": [
+      "Ambient",
+      "Meditative"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 37",
+    "genre": "EDM",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Workout",
+      "Dance"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 38",
+    "genre": "Chillout",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Relax",
+      "Ambient"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 39",
+    "genre": "Rock",
+    "artist": "Neon Lights",
+    "tags": [
+      "Guitar",
+      "Energetic"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 40",
+    "genre": "Pop",
+    "artist": "Club Masters",
+    "tags": [
+      "Catchy",
+      "Dance"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 41",
+    "genre": "Synthwave",
+    "artist": "Club Masters",
+    "tags": [
+      "Relax",
+      "Nostalgic"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 42",
+    "genre": "Rock",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Energetic",
+      "Live"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 43",
+    "genre": "Rock",
+    "artist": "Rock Legends",
+    "tags": [
+      "Energetic",
+      "Live"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 44",
+    "genre": "Pop",
+    "artist": "Club Masters",
+    "tags": [
+      "Dance",
+      "Catchy"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 45",
+    "genre": "Rock",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Classic",
+      "Guitar"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 46",
+    "genre": "Rock",
+    "artist": "Deep Focus",
+    "tags": [
+      "Guitar",
+      "Classic"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 47",
+    "genre": "Indie",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Creative",
+      "Alternative"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 48",
+    "genre": "Jazz",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Smooth",
+      "Instrumental"
+    ],
+    "description": "Chill synths for sunset moments"
+  },
+  {
+    "name": "Song 49",
+    "genre": "Pop",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Catchy",
+      "Dance"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 50",
+    "genre": "Classical",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Relaxing",
+      "Elegant"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 51",
+    "genre": "Pop",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Dance",
+      "Catchy"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 52",
+    "genre": "Chillout",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Calm",
+      "Meditative"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 53",
+    "genre": "Classical",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Orchestral",
+      "Elegant"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 54",
+    "genre": "Rock",
+    "artist": "Neon Lights",
+    "tags": [
+      "Guitar",
+      "Classic"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 55",
+    "genre": "Indie",
+    "artist": "Club Masters",
+    "tags": [
+      "Alternative",
+      "Fresh"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 56",
+    "genre": "Indie",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Fresh",
+      "Creative"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 57",
+    "genre": "Synthwave",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Retro",
+      "Nostalgic"
+    ],
+    "description": "Chill synths for sunset moments"
+  },
+  {
+    "name": "Song 58",
+    "genre": "Lo-Fi",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Driving",
+      "Chill"
+    ],
+    "description": "Chill synths for sunset moments"
+  },
+  {
+    "name": "Song 59",
+    "genre": "Chillout",
+    "artist": "Rock Legends",
+    "tags": [
+      "Ambient",
+      "Calm"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 60",
+    "genre": "Lo-Fi",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Driving",
+      "Study"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 61",
+    "genre": "Jazz",
+    "artist": "Club Masters",
+    "tags": [
+      "Cool",
+      "Instrumental"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 62",
+    "genre": "Jazz",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Classic",
+      "Cool"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 63",
+    "genre": "EDM",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Dance",
+      "Workout"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 64",
+    "genre": "Classical",
+    "artist": "Neon Lights",
+    "tags": [
+      "Elegant",
+      "Instrumental"
+    ],
+    "description": "Groovy sounds to lift spirits"
+  },
+  {
+    "name": "Song 65",
+    "genre": "Indie",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Creative",
+      "Fresh"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 66",
+    "genre": "Chillout",
+    "artist": "Rock Legends",
+    "tags": [
+      "Ambient",
+      "Calm"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 67",
+    "genre": "Hip-Hop",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Flow",
+      "Beats"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 68",
+    "genre": "Chillout",
+    "artist": "Rock Legends",
+    "tags": [
+      "Ambient",
+      "Calm"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 69",
     "genre": "Lo-Fi",
     "artist": "Deep Focus",
-    "tags": ["Calm", "Study"]
+    "tags": [
+      "Calm",
+      "Relax"
+    ],
+    "description": "Relaxing melodies for calm minds"
   },
   {
-    "name": "High Energy",
+    "name": "Song 70",
+    "genre": "Hip-Hop",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Rap",
+      "Beats"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 71",
+    "genre": "Chillout",
+    "artist": "Deep Focus",
+    "tags": [
+      "Meditative",
+      "Relax"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 72",
     "genre": "EDM",
-    "artist": "Club Masters",
-    "tags": ["Energetic", "Workout"]
+    "artist": "Rock Legends",
+    "tags": [
+      "Dance",
+      "Energetic"
+    ],
+    "description": "Fresh tunes for daily motivation"
   },
   {
-    "name": "Sunset Vibes",
+    "name": "Song 73",
+    "genre": "Lo-Fi",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Chill",
+      "Study"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 74",
+    "genre": "Jazz",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Instrumental",
+      "Classic"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 75",
+    "genre": "Rock",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Energetic",
+      "Live"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 76",
+    "genre": "Rock",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Guitar",
+      "Live"
+    ],
+    "description": "Chill synths for sunset moments"
+  },
+  {
+    "name": "Song 77",
+    "genre": "Chillout",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Ambient",
+      "Relax"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 78",
+    "genre": "EDM",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Dance",
+      "Workout"
+    ],
+    "description": "Classic sounds with modern twist"
+  },
+  {
+    "name": "Song 79",
+    "genre": "Chillout",
+    "artist": "Rock Legends",
+    "tags": [
+      "Calm",
+      "Ambient"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 80",
+    "genre": "Indie",
+    "artist": "Club Masters",
+    "tags": [
+      "Upbeat",
+      "Fresh"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 81",
+    "genre": "Chillout",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Calm",
+      "Ambient"
+    ],
+    "description": "Fresh tunes for daily motivation"
+  },
+  {
+    "name": "Song 82",
+    "genre": "Chillout",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Calm",
+      "Meditative"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 83",
+    "genre": "Indie",
+    "artist": "Rock Legends",
+    "tags": [
+      "Fresh",
+      "Alternative"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 84",
+    "genre": "Indie",
+    "artist": "Rock Legends",
+    "tags": [
+      "Creative",
+      "Upbeat"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 85",
     "genre": "Synthwave",
+    "artist": "Hip-Hop Heroes",
+    "tags": [
+      "Retro",
+      "Evening"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 86",
+    "genre": "Hip-Hop",
+    "artist": "Club Masters",
+    "tags": [
+      "Flow",
+      "Rap"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 87",
+    "genre": "Synthwave",
+    "artist": "Jazz Cats",
+    "tags": [
+      "Nostalgic",
+      "Retro"
+    ],
+    "description": "Chill synths for sunset moments"
+  },
+  {
+    "name": "Song 88",
+    "genre": "Jazz",
     "artist": "Neon Lights",
-    "tags": ["Relax", "Evening"]
+    "tags": [
+      "Cool",
+      "Instrumental"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 89",
+    "genre": "Hip-Hop",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Beats",
+      "Rap"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 90",
+    "genre": "Hip-Hop",
+    "artist": "Deep Focus",
+    "tags": [
+      "Rap",
+      "Rhythm"
+    ],
+    "description": "Relaxing melodies for calm minds"
+  },
+  {
+    "name": "Song 91",
+    "genre": "Lo-Fi",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Calm",
+      "Study"
+    ],
+    "description": "Smooth beats for late nights"
+  },
+  {
+    "name": "Song 92",
+    "genre": "Synthwave",
+    "artist": "Club Masters",
+    "tags": [
+      "Nostalgic",
+      "Relax"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 93",
+    "genre": "EDM",
+    "artist": "Neon Lights",
+    "tags": [
+      "Workout",
+      "Dance"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 94",
+    "genre": "Rock",
+    "artist": "Classical Ensemble",
+    "tags": [
+      "Guitar",
+      "Energetic"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 95",
+    "genre": "Hip-Hop",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Flow",
+      "Rap"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 96",
+    "genre": "Rock",
+    "artist": "Club Masters",
+    "tags": [
+      "Guitar",
+      "Classic"
+    ],
+    "description": "Energetic vibes for the party"
+  },
+  {
+    "name": "Song 97",
+    "genre": "Synthwave",
+    "artist": "Indie Spirit",
+    "tags": [
+      "Nostalgic",
+      "Retro"
+    ],
+    "description": "Ambient rhythms to unwind"
+  },
+  {
+    "name": "Song 98",
+    "genre": "Hip-Hop",
+    "artist": "Neon Lights",
+    "tags": [
+      "Rap",
+      "Rhythm"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 99",
+    "genre": "Pop",
+    "artist": "Chill Vibes",
+    "tags": [
+      "Catchy",
+      "Dance"
+    ],
+    "description": "Upbeat rhythms to pump you"
+  },
+  {
+    "name": "Song 100",
+    "genre": "Lo-Fi",
+    "artist": "Synthwave Surfers",
+    "tags": [
+      "Chill",
+      "Calm"
+    ],
+    "description": "Smooth beats for late nights"
   }
 ]

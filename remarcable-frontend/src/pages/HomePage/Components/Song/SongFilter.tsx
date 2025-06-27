@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { FormControl, InputLabel, Select, MenuItem, Box, TextField } from '@mui/material';
-import type { Genre } from '../../../models/Genre';
-import type { Tag } from '../../../models/Tag';
-import { getTags } from '../../../api/TagAPI';
-import { getGenres } from '../../../api/GenreAPI';
-import type { SongFilters } from './types';
-import { useApiClient } from '../../../hooks/useAPIClient';
+import type { Genre } from '../../../../models/Genre';
+import type { Tag } from '../../../../models/Tag';
+import { getTags } from '../../../../api/TagAPI';
+import { getGenres } from '../../../../api/GenreAPI';
+import type { SongFilters } from '../types';
+import { useApiClient } from '../../../../hooks/useAPIClient';
 
 interface Props {
   onFilterChange: (filters: SongFilters) => void;
