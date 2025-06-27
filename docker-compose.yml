@@ -3,10 +3,10 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./remarcable
+      context: ./remarcable-backend
       dockerfile: Dockerfile
     volumes:
-      - ./remarcable:/app
+      - ./remarcable-backend:/app
     ports:
       - "8000:8000"
     environment:

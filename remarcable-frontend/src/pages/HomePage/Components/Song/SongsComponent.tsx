@@ -48,7 +48,7 @@ export const SongsComponent = () => {
   const handleSongDetailClose = () => {
     setSongDetailDialogState({dialogOpen: false, song: null});
   }
-
+  console.log(songs)
   return (
     <div style={{ flex: 1, display: 'flex', flexDirection: 'column'}}>
       <Typography variant="h3" component="h2" gutterBottom>

@@ -39,7 +39,8 @@ class Command(BaseCommand):
             song = Song.objects.create(
                 name=entry['name'],
                 genre=genre,
-                artist=artist
+                artist=artist,
+                description=entry["description"]
             )
             songs_created += 1
 

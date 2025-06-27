@@ -50,7 +50,7 @@ export const RegisterPage = () => {
  
           <div style={{ marginTop: '10px' }}>
             <button onClick={() => navigate('/login')}>Login</button>
-            <button onClick={handleRegister}>Register</button>{' '}
+            <button onClick={handleRegister}>Submit</button>{' '}
           </div>
         </form>
     </div>
