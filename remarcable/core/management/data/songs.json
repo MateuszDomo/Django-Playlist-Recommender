@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Midnight Drive",
+    "genre": "Lo-Fi",
+    "artist": "Synthwave Surfers",
+    "tags": ["Chill", "Driving"]
+  },
+  {
+    "name": "Focus Mode",
+    "genre": "Lo-Fi",
+    "artist": "Deep Focus",
+    "tags": ["Calm", "Study"]
+  },
+  {
+    "name": "High Energy",
+    "genre": "EDM",
+    "artist": "Club Masters",
+    "tags": ["Energetic", "Workout"]
+  },
+  {
+    "name": "Sunset Vibes",
+    "genre": "Synthwave",
+    "artist": "Neon Lights",
+    "tags": ["Relax", "Evening"]
+  }
+]
