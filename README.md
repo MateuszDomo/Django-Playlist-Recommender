@@ -13,3 +13,5 @@ Frontend URL: [http://localhost:5173/](http://localhost:5173/)
 
 Backend URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
     - Admin Panel [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+        - username: admin
+        -password: admin
