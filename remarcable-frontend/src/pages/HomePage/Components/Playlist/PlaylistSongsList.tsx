@@ -18,6 +18,7 @@ export const PlaylistSongsList = ({playlist, refreshPlaylists}: PlaylistSongsLis
     await removeFromPlaylist(api, song.id, playlist.id);
     refreshPlaylists(); 
   }
+  
   return (
     <div>
       <Typography variant="h6">Songs in "{playlist.name}"</Typography>
