@@ -16,7 +16,6 @@ class SongViewSet(viewsets.ModelViewSet):
     
     def get_queryset(self):
         qs = super().get_queryset()
-        print(self.request.query_params)
         genre_ids = self.request.query_params.getlist('genres[]')
         if genre_ids:
             qs = qs.filter(genre__id__in=genre_ids).distinct()
